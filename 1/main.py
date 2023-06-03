@@ -8,5 +8,7 @@ import platform
 
 path = os.path.dirname(__file__)
 listavotos = reader.reader(path)
-votoswriter.gustavo(path, listavotos)
+mayor = votoswriter.gustavo(path, listavotos)
+cont1, cont2, contt, contb = contador.contvotos(path, mayor)
+resultados.charles(path, cont1, cont2, contt, contb)
 print('carlitos')

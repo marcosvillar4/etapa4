@@ -5,6 +5,7 @@ def contvotos(path, mayor):
     cont1 = 0
     cont2 = 0
     conttotal = 0
+    cantb = 0
 
     cand1 = 0
     cand1 = mayor[0]
@@ -33,5 +34,7 @@ def contvotos(path, mayor):
                     cont1 = cont1 + 1
                 if rowactual == cand2:
                     cont2 = cont2 + 1
+                if rowactual == 000:
+                    cantb = cantb + 1
     
-    return cont1, cont2, conttotal
+    return cont1, cont2, conttotal, cantb
