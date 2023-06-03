@@ -15,4 +15,3 @@ def reader(path):
             clase_votos = int(row[2])
             if clase_votos == 1:
                 votos_presidente.append(row)
-    print(votos_presidente)
