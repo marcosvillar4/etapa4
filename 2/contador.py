@@ -1,4 +1,4 @@
-def contvotos(path):
+def contvotos(path, mayor):
     import csv
     import platform
 
@@ -6,6 +6,15 @@ def contvotos(path):
     cont2 = 0
     conttotal = 0
 
+    cand1 = 0
+    cand1 = mayor[0]
+    cand1 = cand1[0]
+    
+
+    cand2 = 0
+    cand2 = mayor[1]
+    cand2 = cand2[0]
+    
     if platform.system() == 'Windows':
         csvfile = path + ".\csv\\votosfiltrados.csv"
     elif platform.system() == 'Linux':
@@ -14,11 +23,11 @@ def contvotos(path):
         with open(csvfile, "r") as archivo:
             reader = csv.reader(archivo)
             for row in reader:
-                clase_votos = int(row[3])
+                partido = int(row[3])
                 conttotal = conttotal + 1
-                if clase_votos == 1:
+                if partido == cand1:
                     cont1 = cont1 + 1
-                if clase_votos == 2:
+                if mayor == cand2:
                     cont2 = cont2 + 1
     
     return cont1, cont2, conttotal
