@@ -3,6 +3,7 @@ def gustavo(path, listavotos):
     import platform
     import modulos.countysort as count
     import modulos.filtro as filtro
+    import random
 
     if platform.system() == 'Linux':
         csvfile = path + '\csv\\votosfiltrados.csv'
@@ -13,7 +14,9 @@ def gustavo(path, listavotos):
       
     filtrado = filtro.filtro(path, mayor)
     
-    
+    random.shuffle(filtrado)
+        
+        
     
     with open (csvfile, 'w') as votos:
         writer = csv.writer(votos)
