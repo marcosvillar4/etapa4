@@ -22,6 +22,8 @@ def gustavo(path, listavotos):
         writer = csv.writer(votos)
         writer.writerows(filtrado)
 
+    
+
     return mayor
 
 
