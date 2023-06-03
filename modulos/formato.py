@@ -20,7 +20,6 @@ def formato(path, orden):
     for item in range(0, len(orden)):
         votostotal = votostotal + segundo_item(orden[item])   
 
-
     for item in range(0, len(orden)):
         temp.append(primer_item(orden[item]))
         with open (csvfile, "r") as partidos:
@@ -40,10 +39,7 @@ def formato(path, orden):
                 temp.append(porcentaje)    
             final.append(temp)
             print
-        
-
-        
-        
+         
         temp = []
 
     return final, votosblanco, votostotal
