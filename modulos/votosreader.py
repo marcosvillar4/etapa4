@@ -7,7 +7,7 @@ def reader(path):
     elif platform.system() == 'Linux':
         csvfile = path + '/csv/votos.csv'
 
-    votos_presidente: []
+    votos_presidente = []
 
     with open(csvfile, "r") as archivo:
         reader = csv.reader(archivo)
