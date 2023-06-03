@@ -9,5 +9,5 @@ El programa este esta diseñado para determinar los resultados de las elecciones
 
 ### Como correr el programa?
 1. Ejecutar main.py
-2.
+2. k
 
