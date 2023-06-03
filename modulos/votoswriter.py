@@ -12,3 +12,4 @@ def gustavo(path, listavotos):
         writer = csv.writer(votos)
         
 
+ñ
