@@ -3,7 +3,7 @@ def countysort(path, listavotos):
     import csv
     import platform
 
-    print(listavotos)
+    
 
     def segundo_item(lista):
         return lista[1]

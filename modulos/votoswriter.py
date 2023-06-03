@@ -10,7 +10,13 @@ def gustavo(path, listavotos):
         csvfile = path + '/csv'
 
     mayor = count.countysort(path, listavotos)
-    votosmayor = filtro.filtro(path, mayor)
+    
+    print(mayor)
+    
+    filtrado = filtro.filtro(path, mayor)
+    
+    print(filtrado)
+    
     with open (csvfile, 'w') as votos:
         writer = csv.writer(votos)
 
