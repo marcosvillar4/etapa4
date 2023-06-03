@@ -8,7 +8,7 @@ def gustavo(path, listavotos):
     elif platform.system() == 'Windows':
         csvfile = path + '/csv'
 
-    count(listavotos, path)
+    count.countysort(listavotos, path)
     with open (csvfile, 'w') as votos:
         writer = csv.writer(votos)
 
