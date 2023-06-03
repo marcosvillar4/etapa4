@@ -5,19 +5,18 @@ def gustavo(path, listavotos):
     import modulos.filtro as filtro
 
     if platform.system() == 'Linux':
-        csvfile = path + '\csv'
+        csvfile = path + '\csv\\votosfiltrados.csv'
     elif platform.system() == 'Windows':
-        csvfile = path + '/csv'
+        csvfile = path + '/csv/votosfiltrados.csv'
 
     mayor = count.countysort(path, listavotos)
-    
-    print(mayor)
-    
+      
     filtrado = filtro.filtro(path, mayor)
     
-    print(filtrado)
+    
     
     with open (csvfile, 'w') as votos:
         writer = csv.writer(votos)
+        writer.writerows(filtrado)
 
 
