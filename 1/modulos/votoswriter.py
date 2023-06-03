@@ -16,10 +16,14 @@ def gustavo(path, listavotos):
     
     random.shuffle(filtrado)
         
-        
+    
     
     with open (csvfile, 'w') as votos:
         writer = csv.writer(votos)
         writer.writerows(filtrado)
+
+    
+
+    return mayor
 
 
