@@ -11,3 +11,4 @@ def gustavo(path, listavotos):
     with open (csvfile, 'w') as votos:
         writer = csv.writer(votos)
         
+
