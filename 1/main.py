@@ -6,3 +6,4 @@ import modulos.votosreader as reader
 path = os.path.dirname(__file__)
 listavotos = reader.reader(path)
 votoswriter.gustavo(path, listavotos)
+print('carlitos')
